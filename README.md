@@ -6,30 +6,31 @@ Este proyecto backend fue desarrollado con Node.js, Express y MySQL. Su objetivo
 
 ## 🚀 Tecnologías utilizadas
 
-- **Node.js** con Express
-- **MySQL** y MySQL Workbench
-- **Postman** (para testeo de endpoints)
-- **dotenv** (para variables de entorno)
-- **CORS** y middleware JSON
-- **Render** para despliegue online
-- **Diagramas ER** y estructura de base de datos creados con MySQL Workbench
+- **Node.js** con Express  
+- **MySQL** y MySQL Workbench  
+- **Postman** (para testeo de endpoints)  
+- **dotenv** (para variables de entorno)  
+- **CORS** y middleware JSON  
+- **Render** para despliegue online  
+- **Diagramas ER** y estructura de base de datos creados con MySQL Workbench  
 
 ---
 
 ## 📁 Estructura de carpetas
 
+```
 /root
 │
 ├── .env
 ├── /backend
-│ └── index.js
+│   └── index.js
 │
 ├── /FRONTEND-REACT
-│ └── index.html / App.jsx / etc.
+│   └── index.html / App.jsx / etc.
 │
 └── /public_html
-└── error404.html
-
+    └── error404.html
+```
 
 ---
 
@@ -44,6 +45,14 @@ El diagrama de relaciones fue generado en **MySQL Workbench** y establece una **
 
 ---
 
+## 🗺️ Diagrama Entidad-Relación (ER)
+
+El siguiente diagrama muestra la estructura de la base de datos:
+
+![Diagrama ER](./assets/images/relaciones.png)
+
+---
+
 ## 📮 Endpoints disponibles
 
 ### `GET /api/projects`
@@ -52,8 +61,12 @@ El diagrama de relaciones fue generado en **MySQL Workbench** y establece una **
 - Si se pasa un query param `id`, devuelve solo el proyecto con ese ID.
 
 **Ejemplo:**
-GET /api/projects?id=3
 
+```
+GET /api/projects?id=3
+```
+
+---
 
 ### `POST /api/projects`
 
@@ -71,29 +84,43 @@ GET /api/projects?id=3
   "photo": "base64 o URL",
   "author": "Nombre autora",
   "job": "Front-end Developer",
-  "image": "https://imagen.com",
+  "image": "https://imagen.com"
 }
+```
 
-**Respuesta esperada**
+**Respuesta esperada:**
 
+```json
 {
   "success": true,
   "id": 5,
   "cardURL": "https://proyecto-promo-53-module-4-team-2-2.onrender.com5"
 }
+```
 
-----
+---
 
 ## 🧪 Pruebas con Postman
-Durante el desarrollo se utilizó Postman para testear los endpoints GET y POST. Se validaron las respuestas con distintos escenarios (datos válidos, errores, sin conexión).
 
+Durante el desarrollo se utilizó **Postman** para testear los endpoints `GET` y `POST`. Se validaron las respuestas con distintos escenarios: datos válidos, errores, campos faltantes o sin conexión a la base de datos.
+
+---
 
 ## ❌ Página 404
-El servidor responde con una página personalizada error404.html para rutas no definidas.
+
+El servidor responde con una página personalizada `error404.html` para rutas no definidas.
+
+---
 
 ## 📌 Notas adicionales
-El backend sirve el frontend de React desde ../FRONTEND-REACT
 
-Las rutas no válidas devuelven una página 404 personalizada
+- El backend sirve el frontend de React desde `../FRONTEND-REACT`.
+- Las rutas no válidas devuelven una página 404 personalizada.
+- Código modular y preparado para escalar en futuros desarrollos.
 
-Código modular y preparado para escalar
+---
+
+## 👩‍💻 Autora
+
+Camila Bedoya — FullStack Developer  
+📫 [LinkedIn](https://www.linkedin.com/in/tu-linkedin) — camila@example.com
