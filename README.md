@@ -123,4 +123,5 @@ El servidor responde con una página personalizada `error404.html` para rutas no
 ## 👩‍💻 Autora
 
 Camila Bedoya — FullStack Developer  
-📫 [LinkedIn](https://www.linkedin.com/in/tu-linkedin) — camila@example.com
+📫 [LinkedIn](https://www.linkedin.com/in/camila-bedoya/) — milabs.esp24@gmail.com
+
