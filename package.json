@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "nodemon": "^3.1.10"
+  },
+  "name": "proyecto-promo-53-module-4-team-2",
+  "version": "1.0.0",
+  "description": "back project ",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "",
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yolanda-bc/proyecto-promo-53-module-4-team-2.git"
+  },
+  "keywords": [
+    "express",
+    "cors",
+    "mysql",
+    "api"
+  ],
+  "author": "teams 2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yolanda-bc/proyecto-promo-53-module-4-team-2/issues"
+  },
+  "homepage": "https://github.com/Yolanda-bc/proyecto-promo-53-module-4-team-2#readme"
+}
